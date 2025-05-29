@@ -22,35 +22,35 @@ A simple geocoding client-server application built with FastAPI and Python, cont
 1. Create an .env file in client/ folder and in server/ folder
 
 For client/.env:
-/code
+<pre><code>
 API_GEOCODE = http://server:8000/geocode
-code/
+</code></pre>
 For server/.env:
-/code
+<pre><code>
 URL_MAP = https://nominatim.openstreetmap.org/search
 USER_EMAIL = youremail@email.com
-code/
+</code></pre>
 
 2. Build and run server container in detached mode on cmd
-/code
+<pre><code>
 docker compose up -d server
-code/
+</code></pre>
 
 3. Build and run client container on cmd
-/code
+<pre><code>
 docker compose run --rm client
-code/
+</code></pre>
 
 4. Exit the application by entering Quit when prompted.
 
 5. To clean up docker images and containers from this docker compose
-/code
+<pre><code>
 docker compose down --rmi all
-code/
+</code></pre>
 
 
 ### 📦Project Structure
-/code
+<pre><code>
 ├── client/                # CLI client app
 │   ├── Dockerfile
 │   ├── main.py
@@ -62,7 +62,7 @@ code/
 ├── docker-compose.yml     # Multi-container orchestration
 ├── .gitignore
 └── README.md
-code/
+</code></pre>
 
 
 ### 📝Notes
